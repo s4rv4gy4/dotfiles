@@ -24,18 +24,20 @@
 
 ]]
 
-return {
+local M = {
 
   {
     "nvim-lua/popup.nvim",
     name = "popup",
     commit = "b7404d35d5d3548a82149238289fa71f7f6de4ac",
   },
+
   {
     "nvim-lua/plenary.nvim",
     name = "plenary",
     commit = "55d9fe89e33efd26f532ef20223e5f9430c8b0c0",
   },
+
   {
     "MunifTanjim/nui.nvim",
     name = "nui",
@@ -48,3 +50,5 @@ return {
     commit = "db0c864375c198cacc171ff373e76bfce2a85045",
   },
 }
+
+return M
