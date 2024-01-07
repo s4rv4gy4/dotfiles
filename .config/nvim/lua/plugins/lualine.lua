@@ -6,14 +6,19 @@
     docs: https://raw.githubusercontent.com/nvim-lualine/lualine.nvim/master/doc/lualine.txt
     hash: https://github.com/nvim-lualine/lualine.nvim/commit/566b7036f717f3d676362742630518a47f132fff 
 
-]]--
+]]
 
 local M = {
   "nvim-lualine/lualine.nvim",
   name = "lualine",
   event = "VeryLazy",
   commit = "566b7036f717f3d676362742630518a47f132fff",
-  dependencies = { 'nvim-tree/nvim-web-devicons', commit = "db0c864375c198cacc171ff373e76bfce2a85045" }
+  dependencies = {
+    "nvim-tree/nvim-web-devicons",
+    name = "devicons",
+    commit = "db0c864375c198cacc171ff373e76bfce2a85045",
+    config = { default = true, color_icons = true },
+  },
 }
 
 function M.config()

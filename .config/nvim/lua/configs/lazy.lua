@@ -35,7 +35,12 @@ lazy.setup({
   diff = { cmd = "terminal_git" },
   defaults = { lazy = true, version = "*" },
   lockfile = vim.fn.stdpath("config") .. "/lua/plugins/plugins-lock.json",
-  checker = { enabled = true, concurrency = 5, notify = true, frequency = 86400 },
+  checker = {
+    enabled = true,
+    concurrency = 5,
+    notify = true,
+    frequency = 86400,
+  },
 
   performance = {
     cache = { enabled = true },

@@ -6,7 +6,7 @@
     docs: https://raw.githubusercontent.com/catppuccin/nvim/main/doc/catppuccin.txt
     hash: https://github.com/catppuccin/nvim/commit/5e36ca599f4aa41bdd87fbf2c5aae4397ac55074
 
-]]--
+]]
 
 local M = {
   "catppuccin/nvim",
@@ -20,7 +20,10 @@ local M = {
 function M.config()
   local is_ok, catppuccin = pcall(require, "catppuccin")
   if not is_ok then
-    vim.notify("[Error] catppuccin colorscheme, not found!", vim.log.levels.ERROR)
+    vim.notify(
+      "[Error] catppuccin colorscheme, not found!",
+      vim.log.levels.ERROR
+    )
     return
   end
 
