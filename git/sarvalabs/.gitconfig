@@ -1,0 +1,14 @@
+[user]
+  username = "sarvalabs-sarvagya"
+  name = "sarvalabs-sarvagya"
+  signingkey = "~/.ssh/sarvalabs/sign.pub"
+  email = "123981503+sarvalabs-sarvagya@users.noreply.github.com"
+
+[github]
+  user = "sarvalabs-sarvagya"
+
+[core]
+  sshCommand = "ssh -i ~/.ssh/sarvalabs/ssh -F /dev/null"
+
+[gpg "ssh"]
+  allowedSignersFile = "~/.ssh/sarvalabs/allowed_signers"

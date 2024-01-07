@@ -1,0 +1,21 @@
+[init]
+  defaultBranch = main
+
+[core]
+  editor = nvim
+  excludesfile = ~/.gitignore
+
+[gpg]
+  format = ssh
+
+[commit]
+  gpgsign = true
+
+[includeif "gitdir:~/git/repos/"]
+path = ~/git/repos/.gitconfig
+
+[includeIf "gitdir:~/git/s4rv4gy4/"]
+path = ~/git/s4rv4gy4/.gitconfig
+ 
+[includeIf "gitdir:~/git/sarvalabs/"]
+path = ~/git/sarvalabs/.gitconfig
