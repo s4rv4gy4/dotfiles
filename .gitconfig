@@ -11,7 +11,7 @@
 [commit]
   gpgsign = true
 
-[includeif "gitdir:~/git/repos/"]
+[includeif "gitdir:~/git/other_repos/"]
 path = ~/git/repos/.gitconfig
 
 [includeIf "gitdir:~/git/s4rv4gy4/"]
