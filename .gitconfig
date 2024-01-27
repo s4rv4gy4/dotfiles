@@ -12,7 +12,7 @@
   gpgsign = true
 
 [includeif "gitdir:~/git/other_repos/"]
-path = ~/git/repos/.gitconfig
+path = ~/git/other_repos/.gitconfig
 
 [includeIf "gitdir:~/git/s4rv4gy4/"]
 path = ~/git/s4rv4gy4/.gitconfig
