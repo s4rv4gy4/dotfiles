@@ -1,0 +1,2 @@
+[includeif "gitdir:~/projects/remote/"]
+  path = ~/projects/remote/.gitconfig
